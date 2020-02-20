@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import {Helmet} from "react-helmet";
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -45,10 +44,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <Helmet>
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
-          <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" />
-        </Helmet>
         <Comment />
         <footer>
           <Bio />

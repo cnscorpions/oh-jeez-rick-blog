@@ -73,14 +73,34 @@ after:
 5. clear main.js and remove Greeter.js, let's write a React Component
 ![A React Function Component](./rfc.png)
 
-continue...
+### configure eslint
+1. `yarn add -D eslint eslint-plugin-import eslint-config-airbnb-base eslint-plugin-react`
+2. `./node_modules/.bin/eslint --init` to generate eslint default configuration
+3. add `"extends": "airbnb-base"` to .eslintrc
+4. add eslint plugin to code editor, for me, sublimeLinter and subimeLinter-eslint
+
+### formate your code with Prettier
+1. `yarn add husky lint-staged prettier`
+2. add the following fields to your package.json
+![](./prettier-setup.png)
+3. `"formate": "./node_modules/.bin/prettier --write 'src/**/*.{js,jsx,ts,tsx,json,css,scss,md}'"` to your package.json
+4. add JsPrettier plugin to sublime
+5. give your first git commit, and then
+
+
+source code: https://github.com/cnscorpions/react-slim-starter
+
+Feel free to comment and share your opinion. 
 
 ### Reference:
 1. [Webpack doc](https://webpack.js.org/concepts/)
 2. [入门 Webpack，看这篇就够了](https://segmentfault.com/a/1190000006178770)
 3. [Tutorial: How to set up React, webpack, and Babel from scratch (2020)](https://www.valentinog.com/blog/babel/)
-
-
-
+4. [airbnb eslint configuration](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
+5. [eslint installation and usage](https://github.com/eslint/eslint#installation-and-usage)
+6. [how to run eslint fix from npm script](https://stackoverflow.com/questions/40271230/how-to-run-eslint-fix-from-npm-script)
+7. [setting up your editor](https://create-react-app.dev/docs/setting-up-your-editor/)
+8. [husky](https://github.com/typicode/husky)
+9. [lint-staged](https://github.com/okonet/lint-staged)
 
 

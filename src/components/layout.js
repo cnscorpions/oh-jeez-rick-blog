@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import Comment from "./comment"
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -60,6 +61,7 @@ const Layout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
+      <Comment />
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}

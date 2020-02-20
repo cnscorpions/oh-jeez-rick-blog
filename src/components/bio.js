@@ -60,11 +60,11 @@ const Bio = () => {
         Written by <strong>{author}</strong> who lives and works in China as a
         web developer building useful things.
         {` `}
-        <a className={ componentStyle.resetLink } href={`https://twitter.com/${social.twitter}`} target="_blank">
-          <img src={twitterIcon} style={{ width: "32px" }} />
+        <a className={ componentStyle.resetLink } href={`https://twitter.com/${social.twitter}`}>
+          <img alt="twitter" src={twitterIcon} style={{ width: "32px" }} />
         </a>
-        <a className={ componentStyle.resetLink } href={`https://github.com/${social.github}`} target="_blank">
-          <img src={githubIcon} style={{ width: "32px" }} />
+        <a className={ componentStyle.resetLink } href={`https://github.com/${social.github}`}>
+          <img alt="github" src={githubIcon} style={{ width: "32px" }} />
         </a>
       </p>
     </div>

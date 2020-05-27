@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import {Helmet} from "react-helmet";
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
@@ -13,10 +12,6 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle}>
-        <Helmet>
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css" />
-          <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js" />
-        </Helmet>
       <SEO title="All posts" />
       <Bio />
       {posts.map(({ node }) => {

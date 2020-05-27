@@ -10,7 +10,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
 import twitterIcon from "../../content/assets/twitter.png"
 import githubIcon from "../../content/assets/github.png"
-import componentStyle from "./components.module.css";
+import componentStyle from "./components.module.css"
 import { rhythm } from "../utils/typography"
 
 const Bio = () => {
@@ -60,10 +60,16 @@ const Bio = () => {
         Written by <strong>{author}</strong> who lives and works in China as a
         web developer building useful things.
         {` `}
-        <a className={ componentStyle.resetLink } href={`https://twitter.com/${social.twitter}`}>
+        <a
+          className={componentStyle.resetLink}
+          href={`https://twitter.com/${social.twitter}`}
+        >
           <img alt="twitter" src={twitterIcon} style={{ width: "32px" }} />
         </a>
-        <a className={ componentStyle.resetLink } href={`https://github.com/${social.github}`}>
+        <a
+          className={componentStyle.resetLink}
+          href={`https://github.com/${social.github}`}
+        >
           <img alt="github" src={githubIcon} style={{ width: "32px" }} />
         </a>
       </p>
